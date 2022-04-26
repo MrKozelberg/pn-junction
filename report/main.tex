@@ -102,7 +102,7 @@ C_\text{pF} = \frac{(C_\text{wrong} - C_0)}{A}\,\times\,39\,\mathrm{пФ},
 $$
 где величина $C_0$ соответствует ложному нулю в условных единицах, а $A$ определяется как величина ёмкости 39 пФ, измеренная в условных единицах (с уже вычтенной $C_0$).
 
-\Subsection{ЗАВИСИМОСТЬ $\mathbf{(S/C)^2}$ ОТ $\mathbf{U}$}
+\Subsection{ЗАВИСИМОСТЬ (S/C) $\mathbf{{}^2}$ ОТ U}
 
 Теория даёт зависимость 
 \begin{equation}
@@ -112,6 +112,15 @@ $$
 \begin{equation}
 	\qty(\frac{S}{C})^2 = \frac{2}{\varepsilon \varepsilon_0 q N^*} (\varphi_k - U).
 \end{equation}
+Экспериментально измеренная зависимость $(S/C)^2$ ОТ ${U}$ представлена на рисунке \ref{fig:sc2_v}.
+
+\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=\textwidth]{../figures/sc2_v.pdf}
+	\caption{Семейства зависимостей ${(S/C)^2}$ ОТ ${U}$ при различных температурах для образцов двух типов.}
+		\label{fig:sc2_v}
+	\end{figure}
+
 Такая линейная зависимость справедлива лишь при малых напряжениях, поэтому линейной регрессии подвергались лишь первые 100 точек каждого из наборов данных. То есть находились параметры $a$ и $b$ для линейной функции $aU+b$. Через эти параметры регрессии искомые физические параметры выражаются следующим образом:
 \begin{equation}
  	\begin{split}
@@ -125,6 +134,7 @@ $$
  % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 \begin{table}[htbp]
+\centering
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
 Образец            & T, ${}^\circ\mathrm{C}$ & $N^*$, $\times10^{21}$ м${}^{-3}$ & $\varphi_k$, В & $\Delta\varphi_k$, В & $l_0$, мкм & $\Delta l_0$, мкм \\ \hline
